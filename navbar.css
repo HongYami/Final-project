@@ -13,8 +13,12 @@ li {
   list-style-type: none;
 }
 
+body {
+  padding-top: 130px;
+}
+
 /* purple decoration bar */
-body::before {
+header::before {
   display: block;
   content: "";
   width: 100%;
@@ -23,6 +27,16 @@ body::before {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+}
+
+.wrapper {
   padding-top: 15px;
   padding-bottom: 15px;
   display: flex;
