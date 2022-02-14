@@ -13,16 +13,30 @@ li {
   list-style-type: none;
 }
 
+body {
+  padding-top: 130px;
+}
+
 /* purple decoration bar */
-body::before {
+header::before {
   display: block;
-  content: '';
+  content: "";
   width: 100%;
   height: 15px;
   background-color: #905ca2;
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+}
+
+.wrapper {
   padding-top: 15px;
   padding-bottom: 15px;
   display: flex;
@@ -219,6 +233,8 @@ nav {
 .card img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  width: 348px;
+  height: 196px;
 }
 
 .org {
